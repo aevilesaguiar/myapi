@@ -33,3 +33,6 @@ conectando
 
 
 ![img_2.png](img_2.png)
+
+https://www.youtube.com/watch?v=nWqSV6lYNPk&list=PLA8Qj9w4RGkXwPerFo4ZDFEessyNJW1ol&index=13
+
