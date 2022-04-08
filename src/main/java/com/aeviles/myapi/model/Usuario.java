@@ -1,4 +1,4 @@
-package com.aeviles.myapi.domain;
+package com.aeviles.myapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,6 +8,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
+import javax.persistence.Id;
 
 
 @Data
@@ -37,15 +38,15 @@ public class Usuario implements Serializable {
 
 
     @NotEmpty(message = "campo NOME é mandatório")
-    @Length(min = 3;max = 100, message = "O nome deve ter entre 3 e 100 caracteres")
+    @Length(min = 3, max = 100, message = "O nome deve ter entre 3 e 100 caracteres")
     private String nome;
 
     @NotEmpty(message = "campo LOGIN é mandatório")
-    @Length(min = 3;max = 20, message = "O nome deve ter entre 3 e 20 caracteres")
+    @Length( min = 3, max = 100, message = "O nome deve ter entre 3 e 20 caracteres")
     private String login;
 
     @NotEmpty(message = "campo SENHA é mandatório")
-    @Length(min = 8;max = 8, message = "O SENHA deve ter 8 caracteres")
+    @Length( min = 8, max = 8, message = "O SENHA deve ter 8 caracteres")
     private String senha;
 
 
